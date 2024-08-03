@@ -1,36 +1,27 @@
 // src/App.js
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './componentes/Header';
-import ProductList from './componentes/ProductList';
+import Home from './routes/Home';
+import Cart from './routes/Cart';
+import Finalizado from './routes/Finalizado';
 import { Container } from '@mui/material';
+import { CartProvider } from './context/CartContext';
 
 function App() {
-  const [produtos, setProdutos] = useState([]);
-  const [erro, setErro] = useState(null);
-
-  useEffect(() => {
-    fetch('http://localhost:3000/produtos')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`Erro na requisição: ${response.status}`);
-        }
-        return response.json();
-      })
-      .then(data => {
-        setProdutos(data);
-      })
-      .catch(error => {
-        setErro(error.message);
-      });
-  }, []);
-
   return (
-    <div>
-      <Header />
-      <Container>
-        <ProductList produtos={produtos} erro={erro} />
-      </Container>
-    </div>
+    <CartProvider>
+      <Router>
+        <Header />
+        <Container>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/carrinho" element={<Cart />} />
+            <Route path="/finalizado" element={<Finalizado />} />
+          </Routes>
+        </Container>
+      </Router>
+    </CartProvider>
   );
 }
 

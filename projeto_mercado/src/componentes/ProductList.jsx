@@ -1,31 +1,18 @@
-// src/components/ProductList.js
+// src/components/ProductList.jsx
 import React from 'react';
-import { Grid, CircularProgress, Alert, Typography, Box } from '@mui/material';
 import ProductCard from './ProductCard';
+import { Grid } from '@mui/material';
 
-function ProductList({ produtos, erro }) {
-  if (erro) {
-    return <Alert severity="error">Erro ao carregar produtos: {erro}</Alert>;
-  }
-
-  if (produtos.length === 0) {
-    return <CircularProgress />;
-  }
-
+const ProductList = ({ produtos }) => {
   return (
-    <Box textAlign="center">
-      <Typography variant="h4" gutterBottom>
-        Produtos Disponíveis
-      </Typography>
-      <Grid container justifyContent="center">
-        <Grid item xs={12} md={8}>
-          {produtos.map(produto => (
-            <ProductCard key={produto.id} produto={produto} />
-          ))}
+    <Grid container spacing={4}>
+      {produtos.map(produto => (
+        <Grid item key={produto.id} xs={12} sm={6} md={4}>
+          <ProductCard produto={produto} />
         </Grid>
-      </Grid>
-    </Box>
+      ))}
+    </Grid>
   );
-}
+};
 
 export default ProductList;

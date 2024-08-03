@@ -1,32 +1,35 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import './index.css'
-import { createBrowserRouter, RouterProvider} from"react-router-dom"
+// src/main.jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { CartProvider } from './context/CartContext.jsx'
 
-import Ainicio from "./routes/Ainicio.jsx"
-import Bmeio from "./routes/Bmeio.jsx"
-import Cfim from "./routes/Cfim.jsx"
+import Home from './routes/Home.jsx';
+import Cart from './routes/Cart.jsx';
+import Finalizado from './routes/Finalizado.jsx';
 
+// Configuração das rotas
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Ainicio />
+    element: <Home />
   },
   {
-    path: "/meio",
-    element: <Bmeio />
+    path: "/carrinho",
+    element: <Cart />
   },
   {
-    path: "/final",
-    element: <Cfim />
+    path: "/finalizado",
+    element: <Finalizado />
   }
 ]);
 
-export default router;
-
+// Renderizando a aplicação com o provedor de contexto
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+    <CartProvider>
+      <RouterProvider router={router} />
+    </CartProvider>
+  </React.StrictMode>
+);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../componentes/Header';
 import ProductList from '../componentes/ProductList';
-import { Container, Button } from '@mui/material';
+import { Container, Typography, Grid, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -28,12 +28,32 @@ function Home() {
     <div>
       <Header />
       <Container>
-        <ProductList produtos={produtos} erro={erro} />
-        <Button variant="contained" color="primary" component={Link} to="/carrinho" style={{ marginTop: 16 }}>
-        Ir para o Carrinho
-        </Button>
+        <Typography variant="h4" gutterBottom style={{ textAlign: 'center', marginTop: '20px' }}>
+          Bem-vindo ao Meu Mercado
+        </Typography>
+        <Typography variant="body1" gutterBottom style={{ textAlign: 'center', marginBottom: '20px' }}>
+          Confira nossos produtos e aproveite as melhores ofertas!
+        </Typography>
+        {erro ? (
+          <Typography variant="body1" color="error">
+            Erro ao carregar produtos: {erro}
+          </Typography>
+        ) : (
+          <Grid container spacing={4}>
+            {produtos.map(produto => (
+              <Grid item key={produto.id} xs={12} sm={6} md={4}>
+                <ProductList produto={produto} />
+              </Grid>
+            ))}
+          </Grid>
+        )}
+        <div style={{ textAlign: 'center', marginTop: '20px' }}>
+          <Button variant="contained" color="primary" component={Link} to="/carrinho">
+            Ir para o Carrinho
+          </Button>
+        </div>
       </Container>
-    </div>
+    </div>                                        
   );
 }
 

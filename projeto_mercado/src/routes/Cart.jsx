@@ -1,7 +1,6 @@
-// src/routes/Cart.jsx
 import React, { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../context/CartContext';
-import { Container, Typography, Grid, Card, CardContent, CardMedia, CardActions, Button } from '@mui/material';
+import { Container, Typography, Grid, Card, CardContent, CardMedia, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Header from '../componentes/Header';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
@@ -22,17 +21,19 @@ const Cart = () => {
   return (
     <div>
       <Header />
-      <Container>
+      <Container
+        sx={{
+          marginTop: '30px', // Altura da AppBar (ajuste conforme necessário)
+        }}
+      >
         <Typography variant="h4" gutterBottom style={{ textAlign: 'center', marginTop: '20px' }}>
           Carrinho
         </Typography>
         {cart.length === 0 ? (
           <div style={{ textAlign: 'center', marginBottom: '20px' }}>
-          <ShoppingCartOutlinedIcon style={{ fontSize: 100, color: 'grey' }} />
-          <Typography variant="body1">
-            Seu carrinho está vazio.
-          </Typography>
-        </div>
+            <ShoppingCartOutlinedIcon style={{ fontSize: 100, color: 'grey' }} />
+            <Typography variant="body1">Seu carrinho está vazio.</Typography>
+          </div>
         ) : (
           <>
             <Grid container spacing={4}>

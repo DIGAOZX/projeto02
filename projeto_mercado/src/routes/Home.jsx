@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../componentes/Header';
 import ProductList from '../componentes/ProductList';
-import { Container, Typography, Grid, Button } from '@mui/material';
+import { Container, Typography, Grid, Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -25,13 +25,30 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'flex-start',
+        minHeight: '100vh',
+        width: '100%',
+      }}
+    >
       <Header />
-      <Container>
-        <Typography variant="h4" gutterBottom style={{ textAlign: 'center', marginTop: '20px' }}>
+      <Container
+        sx={{
+          marginTop: '80px', // Espaço para o Header fixo
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', marginTop: '20px' }}>
           Bem-vindo ao Meu Mercado
         </Typography>
-        <Typography variant="body1" gutterBottom style={{ textAlign: 'center', marginBottom: '20px' }}>
+        <Typography variant="body1" gutterBottom sx={{ textAlign: 'center', marginBottom: '20px' }}>
           Confira nossos produtos e aproveite as melhores ofertas!
         </Typography>
         {erro ? (
@@ -39,21 +56,21 @@ function Home() {
             Erro ao carregar produtos: {erro}
           </Typography>
         ) : (
-          <Grid container spacing={4}>
+          <Grid container spacing={4} justifyContent="center">
             {produtos.map(produto => (
-              <Grid item key={produto.id} xs={12} sm={6} md={4}>
+              <Grid item key={produto.id} xs={12} sm={6} md={4} lg={3}>
                 <ProductList produto={produto} />
               </Grid>
             ))}
           </Grid>
         )}
-        <div style={{ textAlign: 'center', marginTop: '20px' }}>
+        <Box sx={{ textAlign: 'center', marginTop: '20px' }}>
           <Button variant="contained" color="primary" component={Link} to="/carrinho">
             Ir para o Carrinho
           </Button>
-        </div>
+        </Box>
       </Container>
-    </div>                                        
+    </Box>
   );
 }
 

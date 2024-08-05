@@ -4,21 +4,21 @@
       "id": "1",
       "nome": "Manga",
       "preco": 4,
-      "quantidade": 51,
+      "quantidade": 49,
       "imagem": "https://www.3rlab.com.br/wp-content/uploads/2020/10/capa-manga.jpg"
     },
     {
       "id": "2",
       "nome": "Feijão",
       "preco": 3.49,
-      "quantidade": 36,
+      "quantidade": 35,
       "imagem": "https://conteudo.imguol.com.br/c/entretenimento/51/2019/02/01/tipos-de-feijao-1549036437289_v2_450x337.jpg"
     },
     {
       "id": "3",
       "nome": "Arroz",
       "preco": 4.5,
-      "quantidade": 22,
+      "quantidade": 21,
       "imagem": "https://www.lecreuset.com.br/on/demandware.static/-/Sites-le-creuset-br-master/default/dwd44ad97f/images/receita-arroz-branco1.png"
     },
     {

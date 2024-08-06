@@ -1,4 +1,3 @@
-// src/routes/Finalizado.jsx
 import React, { useContext, useEffect, useState } from 'react';
 import { Container, Typography, Button, Box, Grid, Card, CardContent, CardMedia } from '@mui/material';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';

@@ -5,7 +5,7 @@ import { Container, Typography, Grid, Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 function Home() {
-  const [produtos, setProdutos] = useState([]);
+  const [produtosPorCategoria, setProdutosPorCategoria] = useState({});
   const [erro, setErro] = useState(null);
 
   useEffect(() => {
@@ -17,7 +17,12 @@ function Home() {
         return response.json();
       })
       .then(data => {
-        setProdutos(data);
+        // Organize the data by category
+        const produtosOrganizados = data.reduce((acc, categoria) => {
+          acc[categoria.categoria] = categoria.items;
+          return acc;
+        }, {});
+        setProdutosPorCategoria(produtosOrganizados);
       })
       .catch(error => {
         setErro(error.message);
@@ -56,13 +61,20 @@ function Home() {
             Erro ao carregar produtos: {erro}
           </Typography>
         ) : (
-          <Grid container spacing={4} justifyContent="center">
-            {produtos.map(produto => (
-              <Grid item key={produto.id} xs={12} sm={6} md={4} lg={3}>
-                <ProductList produto={produto} />
+          Object.keys(produtosPorCategoria).map(categoria => (
+            <Box key={categoria} sx={{ marginBottom: '60px' }}>
+              <Typography variant="h5" gutterBottom sx={{ textAlign: 'center', marginBottom: '20px' }}>
+                {categoria}
+              </Typography>
+              <Grid container spacing={3} justifyContent="center">
+                {produtosPorCategoria[categoria].map(produto => (
+                  <Grid item key={produto.nome} xs={12} sm={6} md={4} lg={3}>
+                    <ProductList produto={produto} />
+                  </Grid>
+                ))}
               </Grid>
-            ))}
-          </Grid>
+            </Box>
+          ))
         )}
         <Box sx={{ textAlign: 'center', marginTop: '20px' }}>
           <Button variant="contained" color="primary" component={Link} to="/carrinho">

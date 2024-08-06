@@ -1,4 +1,3 @@
-// src/components/ProductCard.jsx
 import React, { useContext } from 'react';
 import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 import { CartContext } from '../context/CartContext';
@@ -7,7 +6,7 @@ const ProductCard = ({ produto }) => {
   const { addToCart } = useContext(CartContext);
 
   const handleAddToCart = () => {
-    addToCart(produto.id);
+    addToCart(produto); // Passa o objeto completo
   };
 
   return (

@@ -24,6 +24,20 @@ function Home() {
       });
   }, []);
 
+  // Função para agrupar os produtos por categoria
+  const agruparPorCategoria = (produtos) => {
+    return produtos.reduce((agrupados, produto) => {
+      const categoria = produto.categoria;
+      if (!agrupados[categoria]) {
+        agrupados[categoria] = [];
+      }
+      agrupados[categoria].push(produto);
+      return agrupados;
+    }, {});
+  };
+
+  const produtosPorCategoria = agruparPorCategoria(produtos);
+
   return (
     <Box
       sx={{
@@ -56,13 +70,20 @@ function Home() {
             Erro ao carregar produtos: {erro}
           </Typography>
         ) : (
-          <Grid container spacing={4} justifyContent="center">
-            {produtos.map(produto => (
-              <Grid item key={produto.id} xs={12} sm={6} md={4} lg={3}>
-                <ProductList produto={produto} />
+          Object.keys(produtosPorCategoria).map(categoria => (
+            <div key={categoria}>
+              <Typography variant="h5" gutterBottom sx={{ textAlign: 'center', marginTop: '20px' }}>
+                {categoria}
+              </Typography>
+              <Grid container spacing={4} justifyContent="center">
+                {produtosPorCategoria[categoria].map(produto => (
+                  <Grid item key={produto.id} xs={12} sm={6} md={4} lg={3}>
+                    <ProductList produto={produto} />
+                  </Grid>
+                ))}
               </Grid>
-            ))}
-          </Grid>
+            </div>
+          ))
         )}
         <Box sx={{ textAlign: 'center', marginTop: '20px' }}>
           <Button variant="contained" color="primary" component={Link} to="/carrinho">

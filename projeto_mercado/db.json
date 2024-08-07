@@ -1,324 +1,324 @@
 {
   "produtos": [
-      {
-          "id": "1",
-          "nome": "Manga",
-          "quantidade": 46,
-          "preco": 5.44,
-          "imagem": "https://www.3rlab.com.br/wp-content/uploads/2020/10/capa-manga.jpg",
-          "categoria": "Fruta"
-      },
-      {
-          "id": "2",
-          "nome": "Banana",
-          "quantidade": 9,
-          "preco": 3.99,
-          "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/07/bananas.jpg",
-          "categoria": "Fruta"
-      },
-      {
-          "id": "3",
-          "nome": "Laranja",
-          "quantidade": 5,
-          "preco": 3.45,
-          "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/muitas-laranjas.png.webp",
-          "categoria": "Fruta"
-      },
-      {
-          "id": "4",
-          "nome": "Morango",
-          "quantidade": 34,
-          "preco": 7.99,
-          "imagem": "https://conteudo.imguol.com.br/c/entretenimento/78/2018/02/28/morango-1519823853148_v2_4x3.jpg",
-          "categoria": "Fruta"
-      },
-      {
-          "id": "5",
-          "nome": "Abacate",
-          "quantidade": 36,
-          "preco": 8.99,
-          "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/abacates.jpg.webp",
-          "categoria": "Fruta"
-      },
-      {
-          "id": "6",
-          "nome": "Cenoura",
-          "quantidade": 14,
-          "preco": 7.99,
-          "imagem": "https://www.infoescola.com/wp-content/uploads/2010/08/cenoura_250834906.jpg",
-          "categoria": "Vegetal"
-      },
-      {
-          "id": "7",
-          "nome": "Batata",
-          "quantidade": 66,
-          "preco": 4.99,
-          "imagem": "https://ceagesp.gov.br/wp-content/uploads/2016/10/batataportal-600x469.jpg",
-          "categoria": "Vegetal"
-      },
-      {
-          "id": "8",
-          "nome": "Beterraba",
-          "quantidade": 45,
-          "preco": 2.99,
-          "imagem": "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/beterraba.jpg?w=1200&h=1200&crop=1",
-          "categoria": "Vegetal"
-      },
-      {
-          "id": "9",
-          "nome": "Chuchu",
-          "quantidade": 45,
-          "preco": 4.25,
-          "imagem": "https://s1.static.brasilescola.uol.com.br/be/e/chuchu.jpg",
-          "categoria": "Vegetal"
-      },
-      {
-          "id": "10",
-          "nome": "Pimentão",
-          "quantidade": 45,
-          "preco": 2.25,
-          "imagem": "https://ceagesp.gov.br/wp-content/uploads/2019/11/Piment%C3%A3oVerde.12216.FP-1-412x275.jpg",
-          "categoria": "Vegetal"
-      },
-      {
-          "id": "11",
-          "nome": "Leite",
-          "quantidade": 123,
-          "preco": 5.23,
-          "imagem": "https://s2-g1.glbimg.com/d4rnbnuodTxCmEUjTIgOz9YNkEY=/0x0:1200x765/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/N/m/aQXLbLRrulZz0VJa4ZZA/foto2.jpg",
-          "categoria": "Laticínios"
-      },
-      {
-          "id": "12",
-          "nome": "Queijo",
-          "quantidade": 500,
-          "preco": 3.12,
-          "imagem": "https://cdn.folhape.com.br/upload/dn_arquivo/2018/11/queijo.png",
-          "categoria": "Laticínios"
-      },
-      {
-          "id": "13",
-          "nome": "Iorgute",
-          "quantidade": 500,
-          "preco": 7.45,
-          "imagem": "https://prezunic.vtexassets.com/arquivos/ids/175857/65033afe41f0343ae3ef186e.jpg?v=638303073268970000",
-          "categoria": "Laticínios"
-      },
-      {
-          "id": "14",
-          "nome": "Requeijão",
-          "quantidade": 500,
-          "preco": 6.23,
-          "imagem": "https://upload.wikimedia.org/wikipedia/commons/6/63/RequeijaoCremoso.jpg",
-          "categoria": "Laticínios"
-      },
-      {
-          "id": "15",
-          "nome": "Manteiga",
-          "quantidade": 500,
-          "preco": 4.23,
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrwsQVN7LO_CuKfHmt4KCzo3tYEGS2j8-_bA&s",
-          "categoria": "Laticínios"
-      },
-      {
-          "id": "16",
-          "nome": "Pão",
-          "quantidade": 74,
-          "preco": 0.23,
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpWX7rLXhdt_ZGZqsBKKhCU9vTRzVhDRV2Lw&s",
-          "categoria": "Padaria"
-      },
-      {
-          "id": "17",
-          "nome": "Bagel",
-          "quantidade": 46,
-          "preco": 5.42,
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI5iDn83O61GA13YlflWLj-spG1MuYzP23OQ&s",
-          "categoria": "Padaria"
-      },
-      {
-          "id": "18",
-          "nome": "Croissant",
-          "quantidade": 67,
-          "preco": 3.97,
-          "imagem": "https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2024/04/Croissants-foto-de-capa-Unsplash.jpg?w=1200&h=900&crop=1",
-          "categoria": "Padaria"
-      },
-      {
-          "id": "19",
-          "nome": "Sonho",
-          "quantidade": 65,
-          "preco": 1.65,
-          "imagem": "https://s2-receitas.glbimg.com/K4UvxTA9Vw9eOB3jtEppikUgyIE=/0x0:1280x720/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/m/z/GillcwTvC9fDZkMqHqeQ/sonho-de-doce-de-leite.jpg",
-          "categoria": "Padaria"
-      },
-      {
-          "id": "20",
-          "nome": "Bolo",
-          "quantidade": 60,
-          "preco": 5.43,
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpHDuM2hntvSojA9i_nVUGKkURpD7TA-8qqQ&s",
-          "categoria": "Padaria"
-      },
-      {
-          "id": "21",
-          "nome": "Café",
-          "quantidade": 100,
-          "preco": 4.99,
-          "imagem": "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/12/vapores-de-cafe-fresco-na-mesa-de-madeira-fecham-a-ia-generativa-1.jpg?w=1200&h=1200&crop=1",
-          "categoria": "Bebidas"
-      },
-      {
-          "id": "22",
-          "nome": "Chá",
-          "quantidade": 100,
-          "preco": 3.56,
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToaK4n6nWPjWxHZloJOb1u3bwnz7hco6xSHw&s",
-          "categoria": "Bebidas"
-      },
-      {
-          "id": "23",
-          "nome": "Suco de laranja",
-          "quantidade": 34,
-          "preco": 11.99,
-          "imagem": "https://s2-oglobo.glbimg.com/AOM9KKAvzunhDfcls7hRV_3_5ao=/0x0:5257x3505/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/X/o/259OOZRJiJZRYtyWP5ew/glass-orange-juice-person-squeezing-orange-it.jpg",
-          "categoria": "Bebidas"
-      },
-      {
-          "id": "24",
-          "nome": "Refrigerante",
-          "quantidade": 100,
-          "preco": 4.99,
-          "imagem": "https://blog.atacadao.com.br/wp-content/uploads/2024/01/Refrigerantes-para-aniversario-saiba-o-que-comprar-Foto-de-um-refrigerante-sendo-colocado-no-copo-Atacadao.jpg",
-          "categoria": "Bebidas"
-      },
-      {
-          "id": "25",
-          "nome": "Água",
-          "quantidade": 99,
-          "preco": 1,
-          "imagem": "https://www.fusati.com.br/wp-content/uploads/2021/05/O-Que-e-agua-Mineral.jpeg",
-          "categoria": "Bebidas"
-      },
-      {
-          "id": "26",
-          "nome": "peito de frango",
-          "quantidade": 64,
-          "preco": 26.77,
-          "imagem": "https://bretas.vtexassets.com/arquivos/ids/184047/6571bf24558925a4e8897f8a.jpg?v=638375501193700000",
-          "categoria": "Carnes"
-      },
-      {
-          "id": "27",
-          "nome": "carne moída",
-          "quantidade": 500,
-          "preco": 3.99,
-          "imagem": "https://sansulalimentos.com.br/wp-content/uploads/2021/09/CARNE-MOIDA-.jpeg",
-          "categoria": "Carnes"
-      },
-      {
-          "id": "28",
-          "nome": "costeletas de porco",
-          "quantidade": 45,
-          "preco": 6.45,
-          "imagem": "https://receitinhas.com.br/wp-content/uploads/2017/12/costeleta-de-porco-assada-simples-facil.jpg",
-          "categoria": "Carnes"
-      },
-      {
-          "id": "29",
-          "nome": "Lombo Súino",
-          "quantidade": 99,
-          "preco": 16.56,
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN6krz0N5syqFDxekmE8rMPJ5RrAiYONHmCw&s",
-          "categoria": "Carnes"
-      },
-      {
-          "id": "30",
-          "nome": "Peixe",
-          "quantidade": 64,
-          "preco": 25.64,
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBV3u15YwM6Na90zxnsWUv7F3eNBX8Bwbfw&s",
-          "categoria": "Carnes"
-      },
-      {
-          "id": "31",
-          "nome": "Batatas fritas",
-          "quantidade": 75,
-          "preco": 3.99,
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAmel9BqA4gx5ShFM2Sx1RaFQVMG6LZFyrBA&s",
-          "categoria": "Carnes"
-      },
-      {
-          "id": "32",
-          "nome": "Biscoitos",
-          "quantidade": 45,
-          "preco": 3.99,
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi1wrKNWd8x-8UE2q1hmwpwGBc-783JCIiBQ&s",
-          "categoria": "Lanches"
-      },
-      {
-          "id": "33",
-          "nome": "Chocolate",
-          "quantidade": 54,
-          "preco": 6.34,
-          "imagem": "https://p2.trrsf.com/image/fget/cf/1200/630/middle/images.terra.com/2022/09/06/istock-1313079918-sokmkksb767p.jpg",
-          "categoria": "Lanches"
-      },
-      {
-          "id": "34",
-          "nome": "Chiclete",
-          "quantidade": 34,
-          "preco": 1.99,
-          "imagem": "https://m.media-amazon.com/images/I/61TKKJhGyHL._AC_UF1000,1000_QL80_.jpg",
-          "categoria": "Lanches"
-      },
-      {
-          "id": "35",
-          "nome": "Salgadinho",
-          "quantidade": 45,
-          "preco": 2.45,
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHHyJ7z18W72kamC8m7Vcw1roXTCBmDb02kA&s",
-          "categoria": "Lanches"
-      },
-      {
-          "id": "36",
-          "nome": "Detergente",
-          "quantidade": 23,
-          "preco": 5.77,
-          "imagem": "https://www.ciflimpadores.com.br/images/h0nadbhvm6m4/5bnqOdw7KC9Ta3sBOzqKwK/f9b81355c3ef62073ef76e3ee564b652/Q0lGX0JBTk5FUl9DQVRFR09SSUFTXzAxXzEyMDB4MTIwMF9fMV8ucG5n/1200w-1200h/cif-lava-lou%C3%A7as%2C-detergente-e-secante.jpg",
-          "categoria": "Limpeza"
-      },
-      {
-          "id": "37",
-          "nome": "Sabão",
-          "quantidade": 65,
-          "preco": 14.56,
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-mKDOI-J_6r8WCoOvgvnjbV5p85H4tf4mmw&s",
-          "categoria": "Limpeza"
-      },
-      {
-          "id": "38",
-          "nome": "Desinfetante",
-          "quantidade": 23,
-          "preco": 24.99,
-          "imagem": "https://www.omo.com/images/h0nadbhvm6m4/6DomEfheYkpnGrFpq76rdj/d24b58262553538f7610521b3c54b1ba/bGF2ZW5kZXIucG5n/1080w-1080h/desinfetante-omo-lavanda.jpg",
-          "categoria": "Limpeza"
-      },
-      {
-          "id": "39",
-          "nome": "Água Sanitaria ",
-          "quantidade": 45,
-          "preco": 12.99,
-          "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGCeJiXXFL-C5169mKx1fmRwaOVd0LkIU3hQ&s",
-          "categoria": "Limpeza"
-      },
-      {
-          "id": "40",
-          "nome": "Amaciante",
-          "quantidade": 25,
-          "preco": 6.99,
-          "imagem": "https://superpao.vtexassets.com/arquivos/ids/445480/Amaciante-Concentrado-Brisa-Leve-Downy-500ml.jpg?v=638482045572200000",
-          "categoria": "Limpeza"
-      }
+    {
+      "id": "1",
+      "nome": "Manga",
+      "quantidade": 46,
+      "preco": 5.44,
+      "imagem": "https://www.3rlab.com.br/wp-content/uploads/2020/10/capa-manga.jpg",
+      "categoria": "Fruta"
+    },
+    {
+      "id": "2",
+      "nome": "Banana",
+      "quantidade": 9,
+      "preco": 3.99,
+      "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/07/bananas.jpg",
+      "categoria": "Fruta"
+    },
+    {
+      "id": "3",
+      "nome": "Laranja",
+      "quantidade": 5,
+      "preco": 3.45,
+      "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/muitas-laranjas.png.webp",
+      "categoria": "Fruta"
+    },
+    {
+      "id": "4",
+      "nome": "Morango",
+      "quantidade": 33,
+      "preco": 7.99,
+      "imagem": "https://conteudo.imguol.com.br/c/entretenimento/78/2018/02/28/morango-1519823853148_v2_4x3.jpg",
+      "categoria": "Fruta"
+    },
+    {
+      "id": "5",
+      "nome": "Abacate",
+      "quantidade": 36,
+      "preco": 8.99,
+      "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/abacates.jpg.webp",
+      "categoria": "Fruta"
+    },
+    {
+      "id": "6",
+      "nome": "Cenoura",
+      "quantidade": 14,
+      "preco": 7.99,
+      "imagem": "https://www.infoescola.com/wp-content/uploads/2010/08/cenoura_250834906.jpg",
+      "categoria": "Vegetal"
+    },
+    {
+      "id": "7",
+      "nome": "Batata",
+      "quantidade": 66,
+      "preco": 4.99,
+      "imagem": "https://ceagesp.gov.br/wp-content/uploads/2016/10/batataportal-600x469.jpg",
+      "categoria": "Vegetal"
+    },
+    {
+      "id": "8",
+      "nome": "Beterraba",
+      "quantidade": 45,
+      "preco": 2.99,
+      "imagem": "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/beterraba.jpg?w=1200&h=1200&crop=1",
+      "categoria": "Vegetal"
+    },
+    {
+      "id": "9",
+      "nome": "Chuchu",
+      "quantidade": 45,
+      "preco": 4.25,
+      "imagem": "https://s1.static.brasilescola.uol.com.br/be/e/chuchu.jpg",
+      "categoria": "Vegetal"
+    },
+    {
+      "id": "10",
+      "nome": "Pimentão",
+      "quantidade": 45,
+      "preco": 2.25,
+      "imagem": "https://ceagesp.gov.br/wp-content/uploads/2019/11/Piment%C3%A3oVerde.12216.FP-1-412x275.jpg",
+      "categoria": "Vegetal"
+    },
+    {
+      "id": "11",
+      "nome": "Leite",
+      "quantidade": 123,
+      "preco": 5.23,
+      "imagem": "https://s2-g1.glbimg.com/d4rnbnuodTxCmEUjTIgOz9YNkEY=/0x0:1200x765/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/N/m/aQXLbLRrulZz0VJa4ZZA/foto2.jpg",
+      "categoria": "Laticínios"
+    },
+    {
+      "id": "12",
+      "nome": "Queijo",
+      "quantidade": 500,
+      "preco": 3.12,
+      "imagem": "https://cdn.folhape.com.br/upload/dn_arquivo/2018/11/queijo.png",
+      "categoria": "Laticínios"
+    },
+    {
+      "id": "13",
+      "nome": "Iorgute",
+      "quantidade": 500,
+      "preco": 7.45,
+      "imagem": "https://prezunic.vtexassets.com/arquivos/ids/175857/65033afe41f0343ae3ef186e.jpg?v=638303073268970000",
+      "categoria": "Laticínios"
+    },
+    {
+      "id": "14",
+      "nome": "Requeijão",
+      "quantidade": 500,
+      "preco": 6.23,
+      "imagem": "https://upload.wikimedia.org/wikipedia/commons/6/63/RequeijaoCremoso.jpg",
+      "categoria": "Laticínios"
+    },
+    {
+      "id": "15",
+      "nome": "Manteiga",
+      "quantidade": 500,
+      "preco": 4.23,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrwsQVN7LO_CuKfHmt4KCzo3tYEGS2j8-_bA&s",
+      "categoria": "Laticínios"
+    },
+    {
+      "id": "16",
+      "nome": "Pão",
+      "quantidade": 74,
+      "preco": 0.23,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpWX7rLXhdt_ZGZqsBKKhCU9vTRzVhDRV2Lw&s",
+      "categoria": "Padaria"
+    },
+    {
+      "id": "17",
+      "nome": "Bagel",
+      "quantidade": 46,
+      "preco": 5.42,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI5iDn83O61GA13YlflWLj-spG1MuYzP23OQ&s",
+      "categoria": "Padaria"
+    },
+    {
+      "id": "18",
+      "nome": "Croissant",
+      "quantidade": 67,
+      "preco": 3.97,
+      "imagem": "https://www.cnnbrasil.com.br/viagemegastronomia/wp-content/uploads/sites/5/2024/04/Croissants-foto-de-capa-Unsplash.jpg?w=1200&h=900&crop=1",
+      "categoria": "Padaria"
+    },
+    {
+      "id": "19",
+      "nome": "Sonho",
+      "quantidade": 65,
+      "preco": 1.65,
+      "imagem": "https://s2-receitas.glbimg.com/K4UvxTA9Vw9eOB3jtEppikUgyIE=/0x0:1280x720/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2020/m/z/GillcwTvC9fDZkMqHqeQ/sonho-de-doce-de-leite.jpg",
+      "categoria": "Padaria"
+    },
+    {
+      "id": "20",
+      "nome": "Bolo",
+      "quantidade": 60,
+      "preco": 5.43,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpHDuM2hntvSojA9i_nVUGKkURpD7TA-8qqQ&s",
+      "categoria": "Padaria"
+    },
+    {
+      "id": "21",
+      "nome": "Café",
+      "quantidade": 100,
+      "preco": 4.99,
+      "imagem": "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/12/vapores-de-cafe-fresco-na-mesa-de-madeira-fecham-a-ia-generativa-1.jpg?w=1200&h=1200&crop=1",
+      "categoria": "Bebidas"
+    },
+    {
+      "id": "22",
+      "nome": "Chá",
+      "quantidade": 100,
+      "preco": 3.56,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToaK4n6nWPjWxHZloJOb1u3bwnz7hco6xSHw&s",
+      "categoria": "Bebidas"
+    },
+    {
+      "id": "23",
+      "nome": "Suco de laranja",
+      "quantidade": 34,
+      "preco": 11.99,
+      "imagem": "https://s2-oglobo.glbimg.com/AOM9KKAvzunhDfcls7hRV_3_5ao=/0x0:5257x3505/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/X/o/259OOZRJiJZRYtyWP5ew/glass-orange-juice-person-squeezing-orange-it.jpg",
+      "categoria": "Bebidas"
+    },
+    {
+      "id": "24",
+      "nome": "Refrigerante",
+      "quantidade": 100,
+      "preco": 4.99,
+      "imagem": "https://blog.atacadao.com.br/wp-content/uploads/2024/01/Refrigerantes-para-aniversario-saiba-o-que-comprar-Foto-de-um-refrigerante-sendo-colocado-no-copo-Atacadao.jpg",
+      "categoria": "Bebidas"
+    },
+    {
+      "id": "25",
+      "nome": "Água",
+      "quantidade": 99,
+      "preco": 1,
+      "imagem": "https://www.fusati.com.br/wp-content/uploads/2021/05/O-Que-e-agua-Mineral.jpeg",
+      "categoria": "Bebidas"
+    },
+    {
+      "id": "26",
+      "nome": "peito de frango",
+      "quantidade": 64,
+      "preco": 26.77,
+      "imagem": "https://bretas.vtexassets.com/arquivos/ids/184047/6571bf24558925a4e8897f8a.jpg?v=638375501193700000",
+      "categoria": "Carnes"
+    },
+    {
+      "id": "27",
+      "nome": "carne moída",
+      "quantidade": 500,
+      "preco": 3.99,
+      "imagem": "https://sansulalimentos.com.br/wp-content/uploads/2021/09/CARNE-MOIDA-.jpeg",
+      "categoria": "Carnes"
+    },
+    {
+      "id": "28",
+      "nome": "costeletas de porco",
+      "quantidade": 45,
+      "preco": 6.45,
+      "imagem": "https://receitinhas.com.br/wp-content/uploads/2017/12/costeleta-de-porco-assada-simples-facil.jpg",
+      "categoria": "Carnes"
+    },
+    {
+      "id": "29",
+      "nome": "Lombo Súino",
+      "quantidade": 99,
+      "preco": 16.56,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN6krz0N5syqFDxekmE8rMPJ5RrAiYONHmCw&s",
+      "categoria": "Carnes"
+    },
+    {
+      "id": "30",
+      "nome": "Peixe",
+      "quantidade": 64,
+      "preco": 25.64,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwBV3u15YwM6Na90zxnsWUv7F3eNBX8Bwbfw&s",
+      "categoria": "Carnes"
+    },
+    {
+      "id": "31",
+      "nome": "Batatas fritas",
+      "quantidade": 75,
+      "preco": 3.99,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAmel9BqA4gx5ShFM2Sx1RaFQVMG6LZFyrBA&s",
+      "categoria": "Carnes"
+    },
+    {
+      "id": "32",
+      "nome": "Biscoitos",
+      "quantidade": 45,
+      "preco": 3.99,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi1wrKNWd8x-8UE2q1hmwpwGBc-783JCIiBQ&s",
+      "categoria": "Lanches"
+    },
+    {
+      "id": "33",
+      "nome": "Chocolate",
+      "quantidade": 54,
+      "preco": 6.34,
+      "imagem": "https://p2.trrsf.com/image/fget/cf/1200/630/middle/images.terra.com/2022/09/06/istock-1313079918-sokmkksb767p.jpg",
+      "categoria": "Lanches"
+    },
+    {
+      "id": "34",
+      "nome": "Chiclete",
+      "quantidade": 34,
+      "preco": 1.99,
+      "imagem": "https://m.media-amazon.com/images/I/61TKKJhGyHL._AC_UF1000,1000_QL80_.jpg",
+      "categoria": "Lanches"
+    },
+    {
+      "id": "35",
+      "nome": "Salgadinho",
+      "quantidade": 45,
+      "preco": 2.45,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHHyJ7z18W72kamC8m7Vcw1roXTCBmDb02kA&s",
+      "categoria": "Lanches"
+    },
+    {
+      "id": "36",
+      "nome": "Detergente",
+      "quantidade": 23,
+      "preco": 5.77,
+      "imagem": "https://www.ciflimpadores.com.br/images/h0nadbhvm6m4/5bnqOdw7KC9Ta3sBOzqKwK/f9b81355c3ef62073ef76e3ee564b652/Q0lGX0JBTk5FUl9DQVRFR09SSUFTXzAxXzEyMDB4MTIwMF9fMV8ucG5n/1200w-1200h/cif-lava-lou%C3%A7as%2C-detergente-e-secante.jpg",
+      "categoria": "Limpeza"
+    },
+    {
+      "id": "37",
+      "nome": "Sabão",
+      "quantidade": 65,
+      "preco": 14.56,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-mKDOI-J_6r8WCoOvgvnjbV5p85H4tf4mmw&s",
+      "categoria": "Limpeza"
+    },
+    {
+      "id": "38",
+      "nome": "Desinfetante",
+      "quantidade": 23,
+      "preco": 24.99,
+      "imagem": "https://www.omo.com/images/h0nadbhvm6m4/6DomEfheYkpnGrFpq76rdj/d24b58262553538f7610521b3c54b1ba/bGF2ZW5kZXIucG5n/1080w-1080h/desinfetante-omo-lavanda.jpg",
+      "categoria": "Limpeza"
+    },
+    {
+      "id": "39",
+      "nome": "Água Sanitaria ",
+      "quantidade": 45,
+      "preco": 12.99,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGCeJiXXFL-C5169mKx1fmRwaOVd0LkIU3hQ&s",
+      "categoria": "Limpeza"
+    },
+    {
+      "id": "40",
+      "nome": "Amaciante",
+      "quantidade": 25,
+      "preco": 6.99,
+      "imagem": "https://superpao.vtexassets.com/arquivos/ids/445480/Amaciante-Concentrado-Brisa-Leve-Downy-500ml.jpg?v=638482045572200000",
+      "categoria": "Limpeza"
+    }
   ]
 }

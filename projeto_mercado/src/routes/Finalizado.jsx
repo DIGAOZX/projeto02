@@ -21,12 +21,23 @@ const Finalizado = () => {
   return (
     <div>
       <Header />
-      <Container style={{ textAlign: 'center', marginTop: '50px' }}>
-        <CheckCircleOutlineIcon style={{ fontSize: 100, color: 'green' }} />
+      <Container
+        sx={{
+          textAlign: 'center',
+          marginTop: '100px', // Ajuste o espaçamento conforme necessário
+        }}
+      >
+        <CheckCircleOutlineIcon
+          sx={{
+            fontSize: 100,
+            color: 'success.main', // Utiliza a paleta de cores do tema Material-UI
+            mb: 2,
+          }}
+        />
         <Typography variant="h4" gutterBottom>
           Compra Finalizada!
         </Typography>
-        <Typography variant="body1" style={{ marginBottom: '20px' }}>
+        <Typography variant="body1" gutterBottom sx={{ mb: 3 }}>
           Obrigado por sua compra. Seu pedido foi processado com sucesso.
         </Typography>
 
@@ -36,20 +47,24 @@ const Finalizado = () => {
 
         <Grid container spacing={4} justifyContent="center">
           {cart.map((produto, index) => (
-            <Grid item key={index} xs={12} sm={6} md={4}>
-              <Card>
+            <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
+              <Card
+                sx={{
+                  boxShadow: 3, // Adiciona uma sombra sutil para destacar o cartão
+                }}
+              >
                 <CardMedia
                   component="img"
                   alt={produto.nome}
                   height="140"
-                  image={produto.imagem} // Supondo que a URL da imagem esteja em produto.imagem
+                  image={produto.imagem}
                   title={produto.nome}
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
+                  <Typography gutterBottom variant="h6" component="div">
                     {produto.nome}
                   </Typography>
-                  <Typography variant="body2" color="textSecondary">
+                  <Typography variant="body2" color="text.secondary">
                     R${produto.preco.toFixed(2)} x {produto.quantidade}
                   </Typography>
                 </CardContent>
@@ -58,7 +73,7 @@ const Finalizado = () => {
           ))}
         </Grid>
 
-        <Typography variant="h5" gutterBottom style={{ marginTop: '20px' }}>
+        <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
           Valor Total Pago: R${total.toFixed(2)}
         </Typography>
 

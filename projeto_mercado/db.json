@@ -10,21 +10,21 @@
     {
       "id": "2",
       "nome": "Banana",
-      "quantidade": 10,
+      "quantidade": 9,
       "preco": 3.99,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/07/bananas.jpg"
     },
     {
       "id": "3",
       "nome": "Laranja",
-      "quantidade": 7,
+      "quantidade": 6,
       "preco": 3.45,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/muitas-laranjas.png.webp"
     },
     {
       "id": "4",
       "nome": "Morango",
-      "quantidade": 36,
+      "quantidade": 35,
       "preco": 7.99,
       "imagem": "https://conteudo.imguol.com.br/c/entretenimento/78/2018/02/28/morango-1519823853148_v2_4x3.jpg"
     },
@@ -247,7 +247,7 @@
     },
     {
       "id": "36",
-      "nome": "Detergente Para Louças",
+      "nome": "Detergente",
       "quantidade": 23,
       "preco": 5.77,
       "imagem": "https://www.ciflimpadores.com.br/images/h0nadbhvm6m4/5bnqOdw7KC9Ta3sBOzqKwK/f9b81355c3ef62073ef76e3ee564b652/Q0lGX0JBTk5FUl9DQVRFR09SSUFTXzAxXzEyMDB4MTIwMF9fMV8ucG5n/1200w-1200h/cif-lava-lou%C3%A7as%2C-detergente-e-secante.jpg"

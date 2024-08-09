@@ -3,7 +3,7 @@
     {
       "id": "1",
       "nome": "Manga",
-      "quantidade": 46,
+      "quantidade": 43,
       "preco": 5.44,
       "imagem": "https://www.3rlab.com.br/wp-content/uploads/2020/10/capa-manga.jpg",
       "categoria": "Fruta"
@@ -11,7 +11,7 @@
     {
       "id": "2",
       "nome": "Banana",
-      "quantidade": 9,
+      "quantidade": 4,
       "preco": 3.99,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/07/bananas.jpg",
       "categoria": "Fruta"
@@ -19,7 +19,7 @@
     {
       "id": "3",
       "nome": "Laranja",
-      "quantidade": 5,
+      "quantidade": 4,
       "preco": 3.45,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/muitas-laranjas.png.webp",
       "categoria": "Fruta"
@@ -27,7 +27,7 @@
     {
       "id": "4",
       "nome": "Morango",
-      "quantidade": 33,
+      "quantidade": 32,
       "preco": 7.99,
       "imagem": "https://conteudo.imguol.com.br/c/entretenimento/78/2018/02/28/morango-1519823853148_v2_4x3.jpg",
       "categoria": "Fruta"
@@ -246,7 +246,7 @@
       "quantidade": 75,
       "preco": 3.99,
       "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAmel9BqA4gx5ShFM2Sx1RaFQVMG6LZFyrBA&s",
-      "categoria": "Carnes"
+      "categoria": "Lanches"
     },
     {
       "id": "32",

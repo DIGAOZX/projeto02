@@ -2,6 +2,7 @@ import React from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Box } from '@mui/material';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import LockOpenOutlinedIcon from '@mui/icons-material/LockOpenOutlined';
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -22,6 +23,11 @@ function Header() {
           justifyContent: 'space-between', // Distribui espaço entre os itens
         }}
       >
+        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          <IconButton color="inherit" component={Link} to="/repositorio">
+            <LockOpenOutlinedIcon />
+          </IconButton>
+        </Box>
         <Box sx={{ flex: 1, textAlign: 'center' }}>
           <Typography
             variant="h6"

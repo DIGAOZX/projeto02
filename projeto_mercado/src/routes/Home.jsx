@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../componentes/Header';
-import ProductList from '../componentes/ProductList';
+import ProductCard from '../componentes/ProductCard'; // Ajustado para ProductCard
 import { Container, Typography, Grid, Button, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 
@@ -16,12 +16,8 @@ function Home() {
         }
         return response.json();
       })
-      .then(data => {
-        setProdutos(data);
-      })
-      .catch(error => {
-        setErro(error.message);
-      });
+      .then(data => setProdutos(data))
+      .catch(error => setErro(error.message));
   }, []);
 
   // Função para agrupar os produtos por categoria
@@ -47,12 +43,14 @@ function Home() {
         justifyContent: 'flex-start',
         minHeight: '100vh',
         width: '100%',
+        // Removido o fundo branco
       }}
     >
       <Header />
       <Container
         sx={{
           marginTop: '80px', // Espaço para o Header fixo
+          paddingBottom: '40px', // Espaço na parte inferior
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -66,23 +64,23 @@ function Home() {
           Confira nossos produtos e aproveite as melhores ofertas!
         </Typography>
         {erro ? (
-          <Typography variant="body1" color="error">
+          <Typography variant="body1" color="error" sx={{ textAlign: 'center' }}>
             Erro ao carregar produtos: {erro}
           </Typography>
         ) : (
           Object.keys(produtosPorCategoria).map(categoria => (
-            <div key={categoria}>
-              <Typography variant="h5" gutterBottom sx={{ textAlign: 'center', marginTop: '20px' }}>
+            <Box key={categoria} sx={{ width: '100%', mb: 4 }}>
+              <Typography variant="h5" gutterBottom sx={{ textAlign: 'center' }}>
                 {categoria}
               </Typography>
               <Grid container spacing={4} justifyContent="center">
                 {produtosPorCategoria[categoria].map(produto => (
                   <Grid item key={produto.id} xs={12} sm={6} md={4} lg={3}>
-                    <ProductList produto={produto} />
+                    <ProductCard produto={produto} /> {/* Ajustado para ProductCard */}
                   </Grid>
                 ))}
               </Grid>
-            </div>
+            </Box>
           ))
         )}
         <Box sx={{ textAlign: 'center', marginTop: '20px' }}>

@@ -1,3 +1,4 @@
+// src/components/Header.js
 import React from 'react';
 import { AppBar, Toolbar, Typography, IconButton, Box } from '@mui/material';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
@@ -5,26 +6,30 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import LockOpenOutlinedIcon from '@mui/icons-material/LockOpenOutlined';
 import { Link } from 'react-router-dom';
 
+const APP_BAR_HEIGHT = 64; // Ajuste conforme necessário
+
 function Header() {
   return (
     <AppBar
       position="fixed"
       sx={{
         width: '100%',
-        backgroundColor: '#1976d2', // Cor de fundo da AppBar
-        padding: '10px 20px', // Espaçamento interno ajustado
-        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', // Sombra leve para destacar
+        height: APP_BAR_HEIGHT,
+        backgroundColor: '#1976d2',
+        padding: '10px 20px',
+        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
       }}
     >
       <Toolbar
         sx={{
           display: 'flex',
-          alignItems: 'center', // Alinha ícones e texto no centro verticalmente
-          justifyContent: 'space-between', // Distribui espaço entre os itens
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          height: '100%',
         }}
       >
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <IconButton color="inherit" component={Link} to="/repositorio">
+          <IconButton color="inherit" component={Link} to="/login">
             <LockOpenOutlinedIcon />
           </IconButton>
         </Box>
@@ -34,12 +39,12 @@ function Header() {
             component={Link}
             to="/"
             sx={{
-              color: '#fff', // Cor do texto branca
+              color: '#fff',
               textDecoration: 'none',
               fontFamily: 'Oswald, sans-serif',
               fontWeight: 'bold',
-              letterSpacing: '0.5px', // Espaçamento entre letras
-              display: 'block', // Faz com que o texto ocupe a largura total do Box
+              letterSpacing: '0.5px',
+              display: 'block',
             }}
           >
             Meu Mercado

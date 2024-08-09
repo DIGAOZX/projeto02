@@ -1,25 +1,17 @@
 {
   "produtos": [
     {
-      "id": "1",
-      "nome": "Manga",
-      "quantidade": 43,
-      "preco": 5.44,
-      "imagem": "https://www.3rlab.com.br/wp-content/uploads/2020/10/capa-manga.jpg",
-      "categoria": "Fruta"
-    },
-    {
       "id": "2",
       "nome": "Banana",
-      "quantidade": 4,
-      "preco": 3.99,
+      "quantidade": "40",
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/07/bananas.jpg",
-      "categoria": "Fruta"
+      "categoria": "Fruta",
+      "preco": 3.99
     },
     {
       "id": "3",
       "nome": "Laranja",
-      "quantidade": 4,
+      "quantidade": 2,
       "preco": 3.45,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/muitas-laranjas.png.webp",
       "categoria": "Fruta"
@@ -27,7 +19,7 @@
     {
       "id": "4",
       "nome": "Morango",
-      "quantidade": 32,
+      "quantidade": 29,
       "preco": 7.99,
       "imagem": "https://conteudo.imguol.com.br/c/entretenimento/78/2018/02/28/morango-1519823853148_v2_4x3.jpg",
       "categoria": "Fruta"
@@ -35,7 +27,7 @@
     {
       "id": "5",
       "nome": "Abacate",
-      "quantidade": 36,
+      "quantidade": 35,
       "preco": 8.99,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/abacates.jpg.webp",
       "categoria": "Fruta"
@@ -94,14 +86,6 @@
       "quantidade": 500,
       "preco": 3.12,
       "imagem": "https://cdn.folhape.com.br/upload/dn_arquivo/2018/11/queijo.png",
-      "categoria": "Laticínios"
-    },
-    {
-      "id": "13",
-      "nome": "Iorgute",
-      "quantidade": 500,
-      "preco": 7.45,
-      "imagem": "https://prezunic.vtexassets.com/arquivos/ids/175857/65033afe41f0343ae3ef186e.jpg?v=638303073268970000",
       "categoria": "Laticínios"
     },
     {
@@ -319,6 +303,14 @@
       "preco": 6.99,
       "imagem": "https://superpao.vtexassets.com/arquivos/ids/445480/Amaciante-Concentrado-Brisa-Leve-Downy-500ml.jpg?v=638482045572200000",
       "categoria": "Limpeza"
+    },
+    {
+      "id": "1a9f",
+      "nome": "maça",
+      "quantidade": "34",
+      "imagem": "https://fsp.usp.br/eccco/wp-content/uploads/2022/11/matheus-cenali-wXuzS9xR49M-unsplash-1200x900.jpg",
+      "categoria": "Fruta",
+      "preco": "5.66"
     }
   ]
 }

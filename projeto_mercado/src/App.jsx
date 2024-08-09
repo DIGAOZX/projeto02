@@ -5,23 +5,24 @@ import Header from './componentes/Header';
 import Home from './routes/Home';
 import Cart from './routes/Cart';
 import Finalizado from './routes/Finalizado';
+import LoginPage from './routes/LoginPage'; // Importação para LoginPage
+import RepositorioPage from './componentes/RepositorioPage'; // Importação para RepositorioPage
 import { Container } from '@mui/material';
-import { CartProvider } from './context/CartContext';
 
 function App() {
   return (
-    <CartProvider>
-      <Router>
-        <Header />
-        <Container>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/carrinho" element={<Cart />} />
-            <Route path="/finalizado" element={<Finalizado />} />
-          </Routes>
-        </Container>
-      </Router>
-    </CartProvider>
+    <Router>
+      <Header />
+      <Container>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/carrinho" element={<Cart />} />
+          <Route path="/finalizado" element={<Finalizado />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/repositorio" element={<RepositorioPage />} />
+        </Routes>
+      </Container>
+    </Router>
   );
 }
 

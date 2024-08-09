@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Card, CardContent, CardMedia, Typography, Button, Box } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 import { CartContext } from '../context/CartContext';
 
 const ProductCard = ({ produto }) => {
@@ -9,16 +9,19 @@ const ProductCard = ({ produto }) => {
     addToCart(produto); // Passa o objeto completo
   };
 
+  // Garantindo que o preco seja um número e formatando-o
+  const precoFormatado = Number.isNaN(Number(produto.preco)) ? '0.00' : Number(produto.preco).toFixed(2);
+
   return (
     <Card
       sx={{
-        maxWidth: 345, // Define uma largura máxima para o cartão
-        borderRadius: 2, // Bordas arredondadas
-        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', // Sombra leve
-        transition: 'transform 0.3s, box-shadow 0.3s', // Transição suave para efeito hover
+        maxWidth: 345,
+        borderRadius: 2,
+        boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+        transition: 'transform 0.3s, box-shadow 0.3s',
         '&:hover': {
-          transform: 'scale(1.03)', // Aumenta o tamanho do cartão ao passar o mouse
-          boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.2)', // Sombra mais pronunciada no hover
+          transform: 'scale(1.03)',
+          boxShadow: '0px 6px 12px rgba(0, 0, 0, 0.2)',
         },
       }}
     >
@@ -28,7 +31,7 @@ const ProductCard = ({ produto }) => {
         image={produto.imagem}
         alt={produto.nome}
         sx={{
-          borderBottom: '1px solid #ddd', // Borda sutil abaixo da imagem
+          borderBottom: '1px solid #ddd',
         }}
       />
       <CardContent>
@@ -37,7 +40,7 @@ const ProductCard = ({ produto }) => {
           component="div"
           sx={{
             fontWeight: 'bold',
-            mb: 1, // Margem inferior
+            mb: 1,
           }}
         >
           {produto.nome}
@@ -46,17 +49,26 @@ const ProductCard = ({ produto }) => {
           variant="body2"
           color="text.secondary"
           sx={{
-            mb: 2, // Margem inferior
+            mb: 1,
           }}
         >
-          R${produto.preco.toFixed(2)}
+          R${precoFormatado}
+        </Typography>
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          sx={{
+            mb: 2,
+          }}
+        >
+          Quantidade: {produto.quantidade}
         </Typography>
         <Button
           variant="contained"
           color="primary"
           onClick={handleAddToCart}
           sx={{
-            width: '100%', // Faz o botão ocupar toda a largura do CardContent
+            width: '100%',
           }}
         >
           Adicionar ao Carrinho

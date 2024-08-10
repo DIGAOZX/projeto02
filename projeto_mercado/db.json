@@ -179,7 +179,7 @@
     {
       "id": "25",
       "nome": "Água",
-      "quantidade": 99,
+      "quantidade": 98,
       "preco": 1,
       "imagem": "https://www.fusati.com.br/wp-content/uploads/2021/05/O-Que-e-agua-Mineral.jpeg",
       "categoria": "Bebidas"
@@ -195,7 +195,7 @@
     {
       "id": "27",
       "nome": "carne moída",
-      "quantidade": 500,
+      "quantidade": 499,
       "preco": 3.99,
       "imagem": "https://sansulalimentos.com.br/wp-content/uploads/2021/09/CARNE-MOIDA-.jpeg",
       "categoria": "Carnes"
@@ -203,7 +203,7 @@
     {
       "id": "28",
       "nome": "costeletas de porco",
-      "quantidade": 45,
+      "quantidade": 44,
       "preco": 6.45,
       "imagem": "https://receitinhas.com.br/wp-content/uploads/2017/12/costeleta-de-porco-assada-simples-facil.jpg",
       "categoria": "Carnes"

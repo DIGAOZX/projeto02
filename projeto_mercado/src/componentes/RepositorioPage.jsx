@@ -1,12 +1,11 @@
-// src/routes/RepositorioPage.js
 import React, { useState, useEffect } from 'react';
-import { Container, Button, TextField, Typography, Box, IconButton, Grid } from '@mui/material';
+import { Container, Button, TextField, Typography, Box, IconButton, Grid, Card, CardContent, CardActions } from '@mui/material';
 import EditIcon from '@mui/icons-material/Edit';
 import SaveIcon from '@mui/icons-material/Save';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 const API_URL = 'http://localhost:3000/produtos';
-const APP_BAR_HEIGHT = 64; // Deve corresponder à altura da AppBar
+const APP_BAR_HEIGHT = 64;
 
 function RepositorioPage() {
   const [products, setProducts] = useState([]);
@@ -15,7 +14,7 @@ function RepositorioPage() {
     quantidade: '',
     imagem: '',
     categoria: '',
-    preco: '', // Adicionado campo de preço
+    preco: '',
   });
   const [editProduct, setEditProduct] = useState({
     id: null,
@@ -23,17 +22,12 @@ function RepositorioPage() {
     quantidade: '',
     imagem: '',
     categoria: '',
-    preco: '', // Adicionado campo de preço
+    preco: '',
   });
 
   useEffect(() => {
     fetch(API_URL)
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
+      .then(response => response.json())
       .then(data => setProducts(data))
       .catch(error => console.error('Erro ao buscar produtos:', error));
   }, []);
@@ -46,21 +40,10 @@ function RepositorioPage() {
       },
       body: JSON.stringify(newProduct),
     })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
+      .then(response => response.json())
       .then(data => {
         setProducts([...products, data]);
-        setNewProduct({
-          nome: '',
-          quantidade: '',
-          imagem: '',
-          categoria: '',
-          preco: '', // Limpar o campo de preço
-        });
+        setNewProduct({ nome: '', quantidade: '', imagem: '', categoria: '', preco: '' });
       })
       .catch(error => console.error('Erro ao adicionar produto:', error));
   };
@@ -68,39 +51,27 @@ function RepositorioPage() {
   const updateProduct = () => {
     fetch(`${API_URL}/${editProduct.id}`, {
       method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(editProduct),
     })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response.json();
-      })
+      .then(response => response.json())
       .then(data => {
         setProducts(products.map(product => (product.id === data.id ? data : product)));
-        setEditProduct({
-          id: null,
-          nome: '',
-          quantidade: '',
-          imagem: '',
-          categoria: '',
-          preco: '', // Limpar o campo de preço
-        });
+        setEditProduct({ id: null, nome: '', quantidade: '', imagem: '', categoria: '', preco: '' });
       })
       .catch(error => console.error('Erro ao atualizar produto:', error));
   };
 
   const deleteProduct = (id) => {
-    fetch(`${API_URL}/${id}`, {
-      method: 'DELETE',
-    })
-      .then(() => {
-        setProducts(products.filter(product => product.id !== id));
-      })
+    fetch(`${API_URL}/${id}`, { method: 'DELETE' })
+      .then(() => setProducts(products.filter(product => product.id !== id)))
       .catch(error => console.error('Erro ao remover produto:', error));
+  };
+
+  const textFieldStyles = {
+    input: {
+      color: 'white',
+    },
   };
 
   return (
@@ -108,8 +79,9 @@ function RepositorioPage() {
       <Typography variant="h5" gutterBottom>
         Repositório
       </Typography>
-      <Grid container spacing={2} mb={2}>
-        <Grid item xs={12} md={6} lg={4}>
+      <Grid container spacing={4}>
+        <Grid item xs={12} md={6}>
+          <Typography variant="h6">Adicionar Novo Produto</Typography>
           <TextField
             fullWidth
             label="Nome"
@@ -117,6 +89,7 @@ function RepositorioPage() {
             onChange={(e) => setNewProduct({ ...newProduct, nome: e.target.value })}
             variant="outlined"
             sx={{ mb: 2 }}
+            InputProps={{ style: textFieldStyles.input }}
           />
           <TextField
             fullWidth
@@ -125,6 +98,7 @@ function RepositorioPage() {
             onChange={(e) => setNewProduct({ ...newProduct, quantidade: e.target.value })}
             variant="outlined"
             sx={{ mb: 2 }}
+            InputProps={{ style: textFieldStyles.input }}
           />
           <TextField
             fullWidth
@@ -133,6 +107,7 @@ function RepositorioPage() {
             onChange={(e) => setNewProduct({ ...newProduct, imagem: e.target.value })}
             variant="outlined"
             sx={{ mb: 2 }}
+            InputProps={{ style: textFieldStyles.input }}
           />
           <TextField
             fullWidth
@@ -141,6 +116,7 @@ function RepositorioPage() {
             onChange={(e) => setNewProduct({ ...newProduct, categoria: e.target.value })}
             variant="outlined"
             sx={{ mb: 2 }}
+            InputProps={{ style: textFieldStyles.input }}
           />
           <TextField
             fullWidth
@@ -149,12 +125,15 @@ function RepositorioPage() {
             onChange={(e) => setNewProduct({ ...newProduct, preco: e.target.value })}
             variant="outlined"
             sx={{ mb: 2 }}
+            InputProps={{ style: textFieldStyles.input }}
           />
           <Button fullWidth onClick={addProduct} variant="contained" color="primary">
             Adicionar
           </Button>
         </Grid>
-        <Grid item xs={12} md={6} lg={4}>
+
+        <Grid item xs={12} md={6}>
+          <Typography variant="h6">Editar Produto</Typography>
           <TextField
             fullWidth
             label="Nome"
@@ -162,6 +141,7 @@ function RepositorioPage() {
             onChange={(e) => setEditProduct({ ...editProduct, nome: e.target.value })}
             variant="outlined"
             sx={{ mb: 2 }}
+            InputProps={{ style: textFieldStyles.input }}
           />
           <TextField
             fullWidth
@@ -170,6 +150,7 @@ function RepositorioPage() {
             onChange={(e) => setEditProduct({ ...editProduct, quantidade: e.target.value })}
             variant="outlined"
             sx={{ mb: 2 }}
+            InputProps={{ style: textFieldStyles.input }}
           />
           <TextField
             fullWidth
@@ -178,6 +159,7 @@ function RepositorioPage() {
             onChange={(e) => setEditProduct({ ...editProduct, imagem: e.target.value })}
             variant="outlined"
             sx={{ mb: 2 }}
+            InputProps={{ style: textFieldStyles.input }}
           />
           <TextField
             fullWidth
@@ -186,6 +168,7 @@ function RepositorioPage() {
             onChange={(e) => setEditProduct({ ...editProduct, categoria: e.target.value })}
             variant="outlined"
             sx={{ mb: 2 }}
+            InputProps={{ style: textFieldStyles.input }}
           />
           <TextField
             fullWidth
@@ -194,6 +177,7 @@ function RepositorioPage() {
             onChange={(e) => setEditProduct({ ...editProduct, preco: e.target.value })}
             variant="outlined"
             sx={{ mb: 2 }}
+            InputProps={{ style: textFieldStyles.input }}
           />
           <Button
             fullWidth
@@ -207,27 +191,51 @@ function RepositorioPage() {
           </Button>
         </Grid>
       </Grid>
-      <Box>
-        {products.map(product => (
-          <Box key={product.id} mb={1} display="flex" alignItems="center" border={1} borderColor="divider" p={2} borderRadius={1}>
-            <Typography variant="body1" sx={{ flexGrow: 1 }}>
-              {product.nome} - R${product.preco} {/* Exibir o preço */}
-            </Typography>
-            <IconButton onClick={() => setEditProduct({
-              id: product.id,
-              nome: product.nome,
-              quantidade: product.quantidade,
-              imagem: product.imagem,
-              categoria: product.categoria,
-              preco: product.preco, // Adicionado campo de preço
-            })} color="primary">
-              <EditIcon />
-            </IconButton>
-            <IconButton onClick={() => deleteProduct(product.id)} color="error">
-              <DeleteIcon />
-            </IconButton>
-          </Box>
-        ))}
+
+      <Box mt={4}>
+        <Typography variant="h6">Produtos</Typography>
+        <Grid container spacing={3}>
+          {products.map(product => (
+            <Grid item xs={12} sm={6} md={4} key={product.id}>
+              <Card>
+                <CardContent>
+                  <Typography variant="h6" gutterBottom>
+                    {product.nome}
+                  </Typography>
+                  <Typography variant="body2">
+                    Categoria: {product.categoria}
+                  </Typography>
+                  <Typography variant="body2">
+                    Quantidade: {product.quantidade}
+                  </Typography>
+                  <Typography variant="body2">
+                    Preço: R${product.preco}
+                  </Typography>
+                </CardContent>
+                <CardActions>
+                  <IconButton
+                    onClick={() =>
+                      setEditProduct({
+                        id: product.id,
+                        nome: product.nome,
+                        quantidade: product.quantidade,
+                        imagem: product.imagem,
+                        categoria: product.categoria,
+                        preco: product.preco,
+                      })
+                    }
+                    color="primary"
+                  >
+                    <EditIcon />
+                  </IconButton>
+                  <IconButton onClick={() => deleteProduct(product.id)} color="error">
+                    <DeleteIcon />
+                  </IconButton>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
       </Box>
     </Container>
   );

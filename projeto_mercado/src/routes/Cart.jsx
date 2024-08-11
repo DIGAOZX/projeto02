@@ -22,9 +22,16 @@ const Cart = () => {
     <div>
       <Header />
       <Container
-        maxWidth="lg" sx={{  marginTop: '65px', paddingBottom: '40px', ml: '65px'}}
+        maxWidth="lg"
+        sx={{
+          marginTop: '65px',
+          paddingBottom: '40px',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+        }}
       >
-        <Typography variant="h4" gutterBottom style={{ textAlign: 'center', marginTop: '20px' }}>
+        <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', marginTop: '20px' }}>
           Carrinho
         </Typography>
         {cart.length === 0 ? (
@@ -34,7 +41,7 @@ const Cart = () => {
           </div>
         ) : (
           <>
-            <Grid container spacing={4}>
+            <Grid container spacing={4} justifyContent="center">
               {cart.map((produto, index) => (
                 <Grid item key={index} xs={12} sm={6} md={4}>
                   <Card>
@@ -42,7 +49,7 @@ const Cart = () => {
                       component="img"
                       alt={produto.nome}
                       height="140"
-                      image={produto.imagem} 
+                      image={produto.imagem}
                       title={produto.nome}
                     />
                     <CardContent>
@@ -57,7 +64,7 @@ const Cart = () => {
                 </Grid>
               ))}
             </Grid>
-            <Typography variant="h5" gutterBottom style={{ textAlign: 'center', marginTop: '20px' }}>
+            <Typography variant="h5" gutterBottom sx={{ textAlign: 'center', marginTop: '20px' }}>
               Valor Total: R${total.toFixed(2)}
             </Typography>
             <div style={{ textAlign: 'center', marginTop: '20px' }}>

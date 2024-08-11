@@ -22,20 +22,19 @@ const Finalizado = () => {
     <div>
       <Header />
       <Container
-        maxWidth="lg" sx={{  marginTop: '70px', paddingBottom: '40px', ml: '65px'}}
+        maxWidth="lg"
+        sx={{ marginTop: '70px', paddingBottom: '40px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}
       >
-        <div style={{ textAlign: 'center', marginTop: '20px' }}>
+        <Box sx={{ textAlign: 'center', marginTop: '20px' }}>
           <CheckCircleOutlineIcon
-          sx={{ 
-            justifyContent: 'center', 
-            alignItems: 'center',
-            fontSize: 100,
-            color: 'success.main', 
-            mb: 2,
-          }}
-        />
-        </div>
-        
+            sx={{
+              fontSize: 100,
+              color: 'success.main',
+              mb: 2,
+            }}
+          />
+        </Box>
+
         <Typography variant="h5" gutterBottom style={{ textAlign: 'center', marginTop: '20px' }}>
           Compra Finalizada!
         </Typography>
@@ -50,11 +49,7 @@ const Finalizado = () => {
         <Grid container spacing={4} justifyContent="center">
           {cart.map((produto, index) => (
             <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
-              <Card
-                sx={{
-                  boxShadow: 3, 
-                }}
-              >
+              <Card sx={{ boxShadow: 3 }}>
                 <CardMedia
                   component="img"
                   alt={produto.nome}
@@ -79,13 +74,10 @@ const Finalizado = () => {
           Valor Total Pago: R${total.toFixed(2)}
         </Typography>
 
-        <Box mt={4}>
-          <div style={{ textAlign: 'center', marginTop: '20px' }}>
-            <Button variant="contained" color="primary" component={Link} to="/">
+        <Box mt={4} sx={{ textAlign: 'center' }}>
+          <Button variant="contained" color="primary" component={Link} to="/">
             Voltar para a Página Inicial
           </Button>
-          </div>
-          
         </Box>
       </Container>
     </div>

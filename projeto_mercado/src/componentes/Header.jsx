@@ -6,7 +6,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import LockOpenOutlinedIcon from '@mui/icons-material/LockOpenOutlined';
 import { Link } from 'react-router-dom';
 
-const APP_BAR_HEIGHT = 64; // Ajuste conforme necessário
+const APP_BAR_HEIGHT = 80; // Ajuste conforme necessário
 
 function Header() {
   return (
@@ -33,7 +33,7 @@ function Header() {
             <LockOpenOutlinedIcon />
           </IconButton>
         </Box>
-        <Box sx={{ flex: 1, textAlign: 'center' }}>
+        <Box sx={{ flex: 1, textAlign: 'center', paddingLeft: '50px' }}>
           <Typography
             variant="h6"
             component={Link}
@@ -45,6 +45,7 @@ function Header() {
               fontWeight: 'bold',
               letterSpacing: '0.5px',
               display: 'block',
+              fontSize: '2.5rem',
             }}
           >
             Quitanda do seu Zé

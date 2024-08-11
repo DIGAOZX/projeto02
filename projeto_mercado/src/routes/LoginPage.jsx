@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextField, Button, Container, Typography } from '@mui/material';
+import { TextField, Button, Container, Typography, Box } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 function LoginPage() {
@@ -9,37 +9,42 @@ function LoginPage() {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // Adicione a lógica de autenticação aqui. Para simplificação, vamos assumir que qualquer e-mail e senha são válidos.
-    if (email && password) {
+    // Verificar se o e-mail e a senha são iguais aos valores específicos
+    if (email === 'admin@gmail.com' && password === 'admin123') {
       navigate('/repositorio');
+    } else {
+      // Caso as credenciais sejam inválidas, exibe uma mensagem de erro (opcional)
+      alert('Credenciais inválidas. Tente novamente.');
     }
   };
 
   return (
     <Container maxWidth="xs">
-      <Typography variant="h5" gutterBottom>
-        Login
-      </Typography>
-      <form onSubmit={handleLogin}>
-        <TextField
-          fullWidth
-          margin="normal"
-          label="E-mail"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <TextField
-          fullWidth
-          margin="normal"
-          label="Senha"
-          type="password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-        <Button type="submit" variant="contained" color="primary" fullWidth>
-          Entrar
-        </Button>
-      </form>
+      <Box sx={{ marginTop: 13 }}> {/* Ajusta a margem superior para mover os campos para baixo */}
+        <Typography variant="h5" gutterBottom>
+             Área Exclusiva para Credenciados
+        </Typography>
+        <form onSubmit={handleLogin}>
+          <TextField
+            fullWidth
+            margin="normal"
+            label="E-mail"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <TextField
+            fullWidth
+            margin="normal"
+            label="Senha"
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <Button type="submit" variant="contained" color="primary" fullWidth>
+            Entrar
+          </Button>
+        </form>
+      </Box>
     </Container>
   );
 }

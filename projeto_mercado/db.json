@@ -11,7 +11,7 @@
     {
       "id": "3",
       "nome": "Laranja",
-      "quantidade": 20,
+      "quantidade": 19,
       "preco": 3.45,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/muitas-laranjas.png.webp",
       "categoria": "Fruta"
@@ -19,15 +19,15 @@
     {
       "id": "4",
       "nome": "Morango",
-      "quantidade": 2,
-      "preco": 7.99,
+      "quantidade": "99",
       "imagem": "https://conteudo.imguol.com.br/c/entretenimento/78/2018/02/28/morango-1519823853148_v2_4x3.jpg",
-      "categoria": "Fruta"
+      "categoria": "Fruta",
+      "preco": 7.99
     },
     {
       "id": "5",
       "nome": "Abacate",
-      "quantidade": 8,
+      "quantidade": 5,
       "preco": 8.99,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/abacates.jpg.webp",
       "categoria": "Fruta"
@@ -315,7 +315,7 @@
     {
       "id": "eaf4",
       "nome": "Pêra",
-      "quantidade": 55,
+      "quantidade": 54,
       "imagem": "https://conteudo.imguol.com.br/c/entretenimento/4e/2020/03/23/pera-1584989626321_v2_4x3.jpg",
       "categoria": "Fruta",
       "preco": 2.29
@@ -323,7 +323,7 @@
     {
       "id": "bc89",
       "nome": "Pêssego",
-      "quantidade": 36,
+      "quantidade": 35,
       "imagem": "https://images.ecycle.com.br/wp-content/uploads/2014/08/05112557/nisonco-pr-and-seo-H4QpChoce7I-unsplash-scaled.jpg.webp",
       "categoria": "Fruta",
       "preco": 6.99

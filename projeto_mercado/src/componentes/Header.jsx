@@ -47,7 +47,7 @@ function Header() {
               display: 'block',
             }}
           >
-            Meu Mercado
+            Quitanda do seu Zé
           </Typography>
         </Box>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>

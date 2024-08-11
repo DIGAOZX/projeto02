@@ -3,15 +3,15 @@
     {
       "id": "2",
       "nome": "Banana",
-      "quantidade": 19,
+      "quantidade": 17,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/07/bananas.jpg",
       "categoria": "Fruta",
-      "preco": 3.99
+      "preco": 2.99
     },
     {
       "id": "3",
       "nome": "Laranja",
-      "quantidade": 22,
+      "quantidade": 20,
       "preco": 3.45,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/muitas-laranjas.png.webp",
       "categoria": "Fruta"
@@ -19,7 +19,7 @@
     {
       "id": "4",
       "nome": "Morango",
-      "quantidade": 4,
+      "quantidade": 2,
       "preco": 7.99,
       "imagem": "https://conteudo.imguol.com.br/c/entretenimento/78/2018/02/28/morango-1519823853148_v2_4x3.jpg",
       "categoria": "Fruta"
@@ -27,7 +27,7 @@
     {
       "id": "5",
       "nome": "Abacate",
-      "quantidade": 10,
+      "quantidade": 8,
       "preco": 8.99,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/abacates.jpg.webp",
       "categoria": "Fruta"
@@ -43,7 +43,7 @@
     {
       "id": "7",
       "nome": "Batata",
-      "quantidade": 60,
+      "quantidade": 58,
       "preco": 4.99,
       "imagem": "https://ceagesp.gov.br/wp-content/uploads/2016/10/batataportal-600x469.jpg",
       "categoria": "Vegetal"
@@ -59,7 +59,7 @@
     {
       "id": "9",
       "nome": "Chuchu",
-      "quantidade": 42,
+      "quantidade": 41,
       "preco": 4.25,
       "imagem": "https://s1.static.brasilescola.uol.com.br/be/e/chuchu.jpg",
       "categoria": "Vegetal"
@@ -67,7 +67,7 @@
     {
       "id": "10",
       "nome": "Pimentão",
-      "quantidade": 45,
+      "quantidade": 44,
       "preco": 2.25,
       "imagem": "https://ceagesp.gov.br/wp-content/uploads/2019/11/Piment%C3%A3oVerde.12216.FP-1-412x275.jpg",
       "categoria": "Vegetal"
@@ -83,7 +83,7 @@
     {
       "id": "12",
       "nome": "Queijo",
-      "quantidade": 498,
+      "quantidade": 497,
       "preco": 3.12,
       "imagem": "https://cdn.folhape.com.br/upload/dn_arquivo/2018/11/queijo.png",
       "categoria": "Laticínios"
@@ -179,7 +179,7 @@
     {
       "id": "25",
       "nome": "Água",
-      "quantidade": 98,
+      "quantidade": 97,
       "preco": 1,
       "imagem": "https://www.fusati.com.br/wp-content/uploads/2021/05/O-Que-e-agua-Mineral.jpeg",
       "categoria": "Bebidas"
@@ -267,7 +267,7 @@
     {
       "id": "36",
       "nome": "Detergente",
-      "quantidade": 23,
+      "quantidade": 22,
       "preco": 5.77,
       "imagem": "https://www.ciflimpadores.com.br/images/h0nadbhvm6m4/5bnqOdw7KC9Ta3sBOzqKwK/f9b81355c3ef62073ef76e3ee564b652/Q0lGX0JBTk5FUl9DQVRFR09SSUFTXzAxXzEyMDB4MTIwMF9fMV8ucG5n/1200w-1200h/cif-lava-lou%C3%A7as%2C-detergente-e-secante.jpg",
       "categoria": "Limpeza"
@@ -307,7 +307,7 @@
     {
       "id": "1a9f",
       "nome": "Maçã",
-      "quantidade": 17,
+      "quantidade": 16,
       "imagem": "https://fsp.usp.br/eccco/wp-content/uploads/2022/11/matheus-cenali-wXuzS9xR49M-unsplash-1200x900.jpg",
       "categoria": "Fruta",
       "preco": 5.66
@@ -315,7 +315,7 @@
     {
       "id": "eaf4",
       "nome": "Pêra",
-      "quantidade": 57,
+      "quantidade": 55,
       "imagem": "https://conteudo.imguol.com.br/c/entretenimento/4e/2020/03/23/pera-1584989626321_v2_4x3.jpg",
       "categoria": "Fruta",
       "preco": 2.29
@@ -323,10 +323,18 @@
     {
       "id": "bc89",
       "nome": "Pêssego",
-      "quantidade": 37,
+      "quantidade": 36,
       "imagem": "https://images.ecycle.com.br/wp-content/uploads/2014/08/05112557/nisonco-pr-and-seo-H4QpChoce7I-unsplash-scaled.jpg.webp",
       "categoria": "Fruta",
       "preco": 6.99
+    },
+    {
+      "id": "e447",
+      "nome": "Lenço umedecido",
+      "quantidade": 57,
+      "imagem": "https://www.drogariaminasbrasil.com.br/media/product/497/lenco-umedecido-pampers-regular-com-48-unidades-d04.jpg",
+      "categoria": "Limpeza",
+      "preco": 18.9
     }
   ]
 }

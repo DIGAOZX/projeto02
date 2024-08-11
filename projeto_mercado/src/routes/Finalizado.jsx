@@ -22,15 +22,15 @@ const Finalizado = () => {
     <div>
       <Header />
       <Container
-        maxWidth="lg" sx={{ backgroundColor: '#1976d2', marginTop: '65px', paddingBottom: '40px', ml: '65px'}}
+        maxWidth="lg" sx={{  marginTop: '70px', paddingBottom: '40px', ml: '65px'}}
       >
         <div style={{ textAlign: 'center', marginTop: '20px' }}>
           <CheckCircleOutlineIcon
           sx={{ 
-            justifyContent: 'center', // Centraliza horizontalmente
+            justifyContent: 'center', 
             alignItems: 'center',
             fontSize: 100,
-            color: 'success.main', // Utiliza a paleta de cores do tema Material-UI
+            color: 'success.main', 
             mb: 2,
           }}
         />
@@ -52,7 +52,7 @@ const Finalizado = () => {
             <Grid item key={index} xs={12} sm={6} md={4} lg={3}>
               <Card
                 sx={{
-                  boxShadow: 3, // Adiciona uma sombra sutil para destacar o cartão
+                  boxShadow: 3, 
                 }}
               >
                 <CardMedia

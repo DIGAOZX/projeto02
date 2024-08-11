@@ -6,7 +6,6 @@ import { CartContext } from '../context/CartContext';
 const ProductList = ({ produto }) => {
   const { addToCart } = useContext(CartContext);
 
-  // Garantindo que o preco seja um número e formatando-o
   const precoFormatado = Number.isNaN(Number(produto.preco)) ? '0.00' : Number(produto.preco).toFixed(2);
 
   return (

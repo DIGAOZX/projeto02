@@ -6,10 +6,9 @@ const ProductCard = ({ produto }) => {
   const { addToCart } = useContext(CartContext);
 
   const handleAddToCart = () => {
-    addToCart(produto); // Passa o objeto completo
+    addToCart(produto); 
   };
 
-  // Garantindo que o preco seja um número e formatando-o
   const precoFormatado = Number.isNaN(Number(produto.preco)) ? '0.00' : Number(produto.preco).toFixed(2);
 
   return (

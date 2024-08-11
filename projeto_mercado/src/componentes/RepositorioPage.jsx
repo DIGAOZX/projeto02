@@ -5,7 +5,7 @@ import SaveIcon from '@mui/icons-material/Save';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 const API_URL = 'http://localhost:3000/produtos';
-const APP_BAR_HEIGHT = 64;
+const APP_BAR_HEIGHT = 10;
 
 function RepositorioPage() {
   const [products, setProducts] = useState([]);
@@ -74,7 +74,7 @@ function RepositorioPage() {
 
   const textFieldStyles = {
     input: {
-      color: 'white',
+      color: 'black',
     },
   };
 

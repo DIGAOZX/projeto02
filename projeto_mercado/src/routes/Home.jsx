@@ -47,7 +47,7 @@ function Home() {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', width: '100%' }}>
       <Header />
-      <Container maxWidth="lg" sx={{ backgroundColor: '#1976d2', marginTop: '60px', paddingBottom: '40px', ml: '65px' }}>
+      <Container maxWidth="lg" sx={{ marginTop: '60px', paddingBottom: '40px', ml: '65px' }}>
       <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', marginTop: '20px' }}>
           Bem-vindo ao Meu Mercado
         </Typography>

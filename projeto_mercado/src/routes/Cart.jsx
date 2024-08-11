@@ -22,7 +22,7 @@ const Cart = () => {
     <div>
       <Header />
       <Container
-        maxWidth="lg" sx={{ backgroundColor: '#1976d2', marginTop: '65px', paddingBottom: '40px', ml: '65px'}}
+        maxWidth="lg" sx={{  marginTop: '65px', paddingBottom: '40px', ml: '65px'}}
       >
         <Typography variant="h4" gutterBottom style={{ textAlign: 'center', marginTop: '20px' }}>
           Carrinho
@@ -42,7 +42,7 @@ const Cart = () => {
                       component="img"
                       alt={produto.nome}
                       height="140"
-                      image={produto.imagem} // Supondo que a URL da imagem esteja em produto.imagem
+                      image={produto.imagem} 
                       title={produto.nome}
                     />
                     <CardContent>

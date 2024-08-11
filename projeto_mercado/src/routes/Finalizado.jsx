@@ -22,26 +22,28 @@ const Finalizado = () => {
     <div>
       <Header />
       <Container
-        sx={{
-          textAlign: 'center',
-          marginTop: '100px', // Ajuste o espaçamento conforme necessário
-        }}
+        maxWidth="lg" sx={{ backgroundColor: '#1976d2', marginTop: '65px', paddingBottom: '40px', ml: '65px'}}
       >
-        <CheckCircleOutlineIcon
-          sx={{
+        <div style={{ textAlign: 'center', marginTop: '20px' }}>
+          <CheckCircleOutlineIcon
+          sx={{ 
+            justifyContent: 'center', // Centraliza horizontalmente
+            alignItems: 'center',
             fontSize: 100,
             color: 'success.main', // Utiliza a paleta de cores do tema Material-UI
             mb: 2,
           }}
         />
-        <Typography variant="h4" gutterBottom>
+        </div>
+        
+        <Typography variant="h5" gutterBottom style={{ textAlign: 'center', marginTop: '20px' }}>
           Compra Finalizada!
         </Typography>
-        <Typography variant="body1" gutterBottom sx={{ mb: 3 }}>
+        <Typography variant="h5" gutterBottom style={{ textAlign: 'center', marginTop: '20px' }}>
           Obrigado por sua compra. Seu pedido foi processado com sucesso.
         </Typography>
 
-        <Typography variant="h5" gutterBottom>
+        <Typography variant="h5" gutterBottom style={{ textAlign: 'center', marginTop: '20px' }}>
           Resumo do Pedido
         </Typography>
 
@@ -73,14 +75,17 @@ const Finalizado = () => {
           ))}
         </Grid>
 
-        <Typography variant="h5" gutterBottom sx={{ mt: 4 }}>
+        <Typography variant="h5" gutterBottom style={{ textAlign: 'center', marginTop: '20px' }}>
           Valor Total Pago: R${total.toFixed(2)}
         </Typography>
 
         <Box mt={4}>
-          <Button variant="contained" color="primary" component={Link} to="/">
+          <div style={{ textAlign: 'center', marginTop: '20px' }}>
+            <Button variant="contained" color="primary" component={Link} to="/">
             Voltar para a Página Inicial
           </Button>
+          </div>
+          
         </Box>
       </Container>
     </div>

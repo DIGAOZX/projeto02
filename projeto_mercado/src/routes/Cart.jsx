@@ -22,9 +22,7 @@ const Cart = () => {
     <div>
       <Header />
       <Container
-        sx={{
-          marginTop: '30px', // Altura da AppBar (ajuste conforme necessário)
-        }}
+        maxWidth="lg" sx={{ backgroundColor: '#1976d2', marginTop: '65px', paddingBottom: '40px', ml: '65px'}}
       >
         <Typography variant="h4" gutterBottom style={{ textAlign: 'center', marginTop: '20px' }}>
           Carrinho

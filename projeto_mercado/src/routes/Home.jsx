@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../componentes/Header';
-import ProductCard from '../componentes/ProductCard'; // Ajustado para ProductCard
-import { Container, Typography, Grid, Button, Box } from '@mui/material';
+import ProductCard from '../componentes/ProductCard';
+import { Container, Typography, Grid, Button, Box, Paper, TextField, IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import SearchIcon from '@mui/icons-material/Search';
 
 function Home() {
   const [produtos, setProdutos] = useState([]);
   const [erro, setErro] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
     fetch('http://localhost:3000/produtos')
@@ -20,7 +23,6 @@ function Home() {
       .catch(error => setErro(error.message));
   }, []);
 
-  // Função para agrupar os produtos por categoria
   const agruparPorCategoria = (produtos) => {
     return produtos.reduce((agrupados, produto) => {
       const categoria = produto.categoria;
@@ -34,35 +36,42 @@ function Home() {
 
   const produtosPorCategoria = agruparPorCategoria(produtos);
 
+  const handleSearch = (e) => {
+    setSearchQuery(e.target.value.toLowerCase());
+  };
+
+  const filteredProducts = produtos.filter((produto) =>
+    produto.nome.toLowerCase().includes(searchQuery)
+  );
+
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'flex-start',
-        minHeight: '100vh',
-        width: '100%',
-        // Removido o fundo branco
-      }}
-    >
+    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '100vh', width: '100%' }}>
       <Header />
-      <Container
-        sx={{
-          marginTop: '80px', // Espaço para o Header fixo
-          paddingBottom: '40px', // Espaço na parte inferior
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
-        <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', marginTop: '20px' }}>
+      <Container maxWidth="lg" sx={{ backgroundColor: '#1976d2', marginTop: '60px', paddingBottom: '40px', ml: '65px' }}>
+      <Typography variant="h4" gutterBottom sx={{ textAlign: 'center', marginTop: '20px' }}>
           Bem-vindo ao Meu Mercado
         </Typography>
         <Typography variant="body1" gutterBottom sx={{ textAlign: 'center', marginBottom: '20px' }}>
           Confira nossos produtos e aproveite as melhores ofertas!
         </Typography>
+        
+        
+        <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+          <TextField
+            variant="outlined"
+            placeholder="Buscar produtos..."
+            onChange={handleSearch}
+            sx={{ width: '100%', maxWidth: '600px' }}
+            InputProps={{
+              endAdornment: (
+                <IconButton>
+                  <SearchIcon />
+                </IconButton>
+              ),
+            }}
+          />
+        </Box>
+
         {erro ? (
           <Typography variant="body1" color="error" sx={{ textAlign: 'center' }}>
             Erro ao carregar produtos: {erro}
@@ -70,21 +79,24 @@ function Home() {
         ) : (
           Object.keys(produtosPorCategoria).map(categoria => (
             <Box key={categoria} sx={{ width: '100%', mb: 4 }}>
-              <Typography variant="h5" gutterBottom sx={{ textAlign: 'center' }}>
-                {categoria}
-              </Typography>
+              <Paper elevation={3} sx={{ padding: '10px', marginBottom: '20px', backgroundColor: '#f5f5f5' }}>
+                <Typography variant="h5" gutterBottom sx={{ textAlign: 'center' }}>
+                  {categoria}
+                </Typography>
+              </Paper>
               <Grid container spacing={4} justifyContent="center">
-                {produtosPorCategoria[categoria].map(produto => (
+                {produtosPorCategoria[categoria].filter(produto => produto.nome.toLowerCase().includes(searchQuery)).map(produto => (
                   <Grid item key={produto.id} xs={12} sm={6} md={4} lg={3}>
-                    <ProductCard produto={produto} /> {/* Ajustado para ProductCard */}
+                    <ProductCard produto={produto} />
                   </Grid>
                 ))}
               </Grid>
             </Box>
           ))
         )}
+        
         <Box sx={{ textAlign: 'center', marginTop: '20px' }}>
-          <Button variant="contained" color="primary" component={Link} to="/carrinho">
+          <Button variant="contained" color="primary" component={Link} to="/carrinho" startIcon={<ShoppingCartIcon />}>
             Ir para o Carrinho
           </Button>
         </Box>

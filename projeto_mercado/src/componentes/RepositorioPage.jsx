@@ -33,12 +33,14 @@ function RepositorioPage() {
   }, []);
 
   const addProduct = () => {
+    const precoConvertido = parseFloat(newProduct.preco);
+
     fetch(API_URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(newProduct),
+      body: JSON.stringify({ ...newProduct, preco: precoConvertido }),
     })
       .then(response => response.json())
       .then(data => {
@@ -49,10 +51,12 @@ function RepositorioPage() {
   };
 
   const updateProduct = () => {
+    const precoConvertido = parseFloat(editProduct.preco);
+
     fetch(`${API_URL}/${editProduct.id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(editProduct),
+      body: JSON.stringify({ ...editProduct, preco: precoConvertido }),
     })
       .then(response => response.json())
       .then(data => {

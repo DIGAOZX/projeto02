@@ -3,7 +3,7 @@
     {
       "id": "2",
       "nome": "Banana",
-      "quantidade": "40",
+      "quantidade": 19,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/07/bananas.jpg",
       "categoria": "Fruta",
       "preco": 3.99
@@ -11,7 +11,7 @@
     {
       "id": "3",
       "nome": "Laranja",
-      "quantidade": 2,
+      "quantidade": 22,
       "preco": 3.45,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/muitas-laranjas.png.webp",
       "categoria": "Fruta"
@@ -19,7 +19,7 @@
     {
       "id": "4",
       "nome": "Morango",
-      "quantidade": 29,
+      "quantidade": 4,
       "preco": 7.99,
       "imagem": "https://conteudo.imguol.com.br/c/entretenimento/78/2018/02/28/morango-1519823853148_v2_4x3.jpg",
       "categoria": "Fruta"
@@ -27,7 +27,7 @@
     {
       "id": "5",
       "nome": "Abacate",
-      "quantidade": 35,
+      "quantidade": 10,
       "preco": 8.99,
       "imagem": "https://minhasaude.proteste.org.br/wp-content/uploads/2022/10/abacates.jpg.webp",
       "categoria": "Fruta"
@@ -35,7 +35,7 @@
     {
       "id": "6",
       "nome": "Cenoura",
-      "quantidade": 14,
+      "quantidade": 8,
       "preco": 7.99,
       "imagem": "https://www.infoescola.com/wp-content/uploads/2010/08/cenoura_250834906.jpg",
       "categoria": "Vegetal"
@@ -43,7 +43,7 @@
     {
       "id": "7",
       "nome": "Batata",
-      "quantidade": 66,
+      "quantidade": 60,
       "preco": 4.99,
       "imagem": "https://ceagesp.gov.br/wp-content/uploads/2016/10/batataportal-600x469.jpg",
       "categoria": "Vegetal"
@@ -51,7 +51,7 @@
     {
       "id": "8",
       "nome": "Beterraba",
-      "quantidade": 45,
+      "quantidade": 41,
       "preco": 2.99,
       "imagem": "https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/02/beterraba.jpg?w=1200&h=1200&crop=1",
       "categoria": "Vegetal"
@@ -59,7 +59,7 @@
     {
       "id": "9",
       "nome": "Chuchu",
-      "quantidade": 45,
+      "quantidade": 42,
       "preco": 4.25,
       "imagem": "https://s1.static.brasilescola.uol.com.br/be/e/chuchu.jpg",
       "categoria": "Vegetal"
@@ -75,7 +75,7 @@
     {
       "id": "11",
       "nome": "Leite",
-      "quantidade": 123,
+      "quantidade": 121,
       "preco": 5.23,
       "imagem": "https://s2-g1.glbimg.com/d4rnbnuodTxCmEUjTIgOz9YNkEY=/0x0:1200x765/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/N/m/aQXLbLRrulZz0VJa4ZZA/foto2.jpg",
       "categoria": "Laticínios"
@@ -83,7 +83,7 @@
     {
       "id": "12",
       "nome": "Queijo",
-      "quantidade": 500,
+      "quantidade": 498,
       "preco": 3.12,
       "imagem": "https://cdn.folhape.com.br/upload/dn_arquivo/2018/11/queijo.png",
       "categoria": "Laticínios"
@@ -91,7 +91,7 @@
     {
       "id": "14",
       "nome": "Requeijão",
-      "quantidade": 500,
+      "quantidade": 498,
       "preco": 6.23,
       "imagem": "https://upload.wikimedia.org/wikipedia/commons/6/63/RequeijaoCremoso.jpg",
       "categoria": "Laticínios"
@@ -99,7 +99,7 @@
     {
       "id": "15",
       "nome": "Manteiga",
-      "quantidade": 500,
+      "quantidade": 499,
       "preco": 4.23,
       "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrwsQVN7LO_CuKfHmt4KCzo3tYEGS2j8-_bA&s",
       "categoria": "Laticínios"
@@ -107,7 +107,7 @@
     {
       "id": "16",
       "nome": "Pão",
-      "quantidade": 74,
+      "quantidade": 73,
       "preco": 0.23,
       "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpWX7rLXhdt_ZGZqsBKKhCU9vTRzVhDRV2Lw&s",
       "categoria": "Padaria"
@@ -115,7 +115,7 @@
     {
       "id": "17",
       "nome": "Bagel",
-      "quantidade": 46,
+      "quantidade": 45,
       "preco": 5.42,
       "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI5iDn83O61GA13YlflWLj-spG1MuYzP23OQ&s",
       "categoria": "Padaria"
@@ -306,11 +306,27 @@
     },
     {
       "id": "1a9f",
-      "nome": "maça",
-      "quantidade": "34",
+      "nome": "Maçã",
+      "quantidade": 17,
       "imagem": "https://fsp.usp.br/eccco/wp-content/uploads/2022/11/matheus-cenali-wXuzS9xR49M-unsplash-1200x900.jpg",
       "categoria": "Fruta",
-      "preco": "5.66"
+      "preco": 5.66
+    },
+    {
+      "id": "eaf4",
+      "nome": "Pêra",
+      "quantidade": 57,
+      "imagem": "https://conteudo.imguol.com.br/c/entretenimento/4e/2020/03/23/pera-1584989626321_v2_4x3.jpg",
+      "categoria": "Fruta",
+      "preco": 2.29
+    },
+    {
+      "id": "bc89",
+      "nome": "Pêssego",
+      "quantidade": 37,
+      "imagem": "https://images.ecycle.com.br/wp-content/uploads/2014/08/05112557/nisonco-pr-and-seo-H4QpChoce7I-unsplash-scaled.jpg.webp",
+      "categoria": "Fruta",
+      "preco": 6.99
     }
   ]
 }
